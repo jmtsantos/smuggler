@@ -1,0 +1,7 @@
+---
+- hosts: smuggler
+  vars:
+    user: root
+
+  roles:
+    - smuggle

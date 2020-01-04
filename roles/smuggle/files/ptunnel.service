@@ -1,0 +1,11 @@
+[Unit]
+Description=ptunnel ICMP tunnel Service
+
+[Service]
+Type=simple
+User=root
+PIDFile=/run/ptunnel.pid
+ExecStart=/usr/sbin/ptunnel -v 4
+
+[Install]
+WantedBy=multi-user.target

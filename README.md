@@ -3,7 +3,7 @@ Ansible scripts to setup a remote server with ICMP and DNS tunneling
 
 ## Running
 
-Just edit and run the ansible role.
+Just edit and run the ansible role `ansible-playbook -i hosts/cloud.yaml smuggle.yaml`
 
 ### ptunnel
 

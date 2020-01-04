@@ -1,0 +1,11 @@
+[Unit]
+Description=iodine DNS tunnel Service
+
+[Service]
+Type=simple
+User=root
+PIDFile=/run/iodine.pid
+ExecStart=/usr/sbin/iodined -c -f 10.0.0.1 -P password n.domain.com
+
+[Install]
+WantedBy=multi-user.target
