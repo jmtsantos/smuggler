@@ -14,8 +14,14 @@
     dest: /etc/systemd/system/ptunnel.service
     mode: 0600
 
+- name: Replace /etc/default/ptunnel
+  template:
+    src: ptunnel
+    dest: /etc/default/ptunnel
+    mode: 0600
+
 - name: Copy systemd iodine service
-  copy:
+  template:
     src: iodine.service
     dest: /etc/systemd/system/iodine.service
     mode: 0600

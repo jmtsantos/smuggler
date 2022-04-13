@@ -1,7 +1,5 @@
 all:
     hosts:
-        smuggler:
-            ansible_ssh_host: 78.141.221.132
+        smuggler:s
     vars:
         ansible_user: root
-        ansible_private_key_file: /home/<user>/.ssh/id_rsa

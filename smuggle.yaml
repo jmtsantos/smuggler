@@ -3,5 +3,9 @@
   vars:
     user: root
 
+    domain: 
+    iodine_password: 
+    ptunnel_password: 
+
   roles:
     - smuggle

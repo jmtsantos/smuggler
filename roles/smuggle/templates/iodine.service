@@ -5,7 +5,7 @@ Description=iodine DNS tunnel Service
 Type=simple
 User=root
 PIDFile=/run/iodine.pid
-ExecStart=/usr/sbin/iodined -c -f 10.0.0.1 -P password n.domain.com
+ExecStart=/usr/sbin/iodined -c -f 10.0.0.1 -P {{ iodine_password }} n.{{ domain }}
 
 [Install]
 WantedBy=multi-user.target
